@@ -73,6 +73,21 @@ function thirdFunction_v2(){
 }
 //Megjegyzés több feltételt is egmáshoz lehet kapcsolni zárójelezéssel Pl.: ((Feltétel1 && Feltétel2) || Feltétel3)
 
+function fourthFunction() {
+    var counter = 0;
+    var tmp = 1;
+    var outputText = "";
+
+    while (counter<6) {
+        if (tmp%9 == 0) {
+            outputText += tmp + " ";
+            counter++;
+        }
+        tmp++;
+    }
+
+    document.getElementById("solution4").innerHTML = outputText;
+}
 
 function fifthFunction() {
     document.getElementById("bigDiv5").style.backgroundColor = "green";
