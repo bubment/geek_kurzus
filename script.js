@@ -19,6 +19,7 @@ function firstFunction() {
     for (let i = 0; i < 100; i++) {
         outputText += i + " ";
     }
+    outputText = "Sziasztok!"
     document.getElementById("solution1").innerHTML = outputText;
 
     
