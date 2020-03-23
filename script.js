@@ -73,13 +73,13 @@ function thirdFunction_v2(){
 }
 //Megjegyzés több feltételt is egmáshoz lehet kapcsolni zárójelezéssel Pl.: ((Feltétel1 && Feltétel2) || Feltétel3)
 
-function fourthFunction() {
-    var outputText = "Ezek:";
-    var counter = 0;
-    var tmp = 1;
-    while (counter < 5){
-        if(tmp%9 == 0){
-            outputText += " " + tmp;
+function fourthFunction (){
+    var counter=0;
+    var tmp=1;
+    var outputText="";
+    while (counter<5) {
+        if (tmp%9==0) {
+            outputText+=tmp+" ";
             counter++;
         }
         tmp++;
@@ -118,4 +118,12 @@ function ninthFunction() {
 
 
     document.getElementById("solution9").innerHTML = outputText;
+function tenthFunction(){
+    var counter=0;
+    var tmp=-3;
+    var outputText="";
+    for (let i = -3; i < 4; i++) {
+        outputText+=i/i+" ";
+    }
+    document.getElementById("solution10").innerHTML = outputText;
 }
