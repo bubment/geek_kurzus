@@ -73,6 +73,20 @@ function thirdFunction_v2(){
 }
 //Megjegyzés több feltételt is egmáshoz lehet kapcsolni zárójelezéssel Pl.: ((Feltétel1 && Feltétel2) || Feltétel3)
 
+function fourthFunction() {
+    var outputText = "Ezek:";
+    var counter = 0;
+    var tmp = 1;
+    while (counter < 5){
+        if(tmp%9 == 0){
+            outputText += " " + tmp;
+            counter++;
+        }
+        tmp++;
+    }
+    outputText += " .";
+    document.getElementById("solution4").innerHTML = outputText;
+}
 
 function fifthFunction() {
     document.getElementById("bigDiv5").style.backgroundColor = "green";
@@ -80,4 +94,28 @@ function fifthFunction() {
 
 function eightFunction() {
     document.getElementById("solution8").innerHTML = "<h1 class='akarmi'>Epstein didn't kill himspelf</h1>";
+}
+
+function ninthFunction() {
+    var outputText = "Sütimegoldás:";
+    for(var i=100;i>0;i--){
+        if(i%6 == 0){
+            outputText += " <span style='color:purple'>" + i + "</span>";
+            continue;
+        }
+
+        if(i%3 == 0){
+            outputText += " <span style='color:deeppink'>" + i + "</span>";
+            continue;
+        }
+
+        if(i%2 == 0){
+            outputText += " <span style='color:blue'>" + i + "</span>";
+            continue;
+        }
+        outputText += " " + i;
+    }
+
+
+    document.getElementById("solution9").innerHTML = outputText;
 }
